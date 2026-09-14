@@ -6,8 +6,8 @@ The computer itself remains local-first: code executes on the user's device, whi
 
 ## Explore the project
 
-- [Project website and source browser](https://mimicrohood.github.io/nockwork/)
-- [Open the Nockwork system](https://mimicrohood.github.io/nockwork/system/)
+- [Project website and source browser](https://nockwork.xyz/)
+- [Open the Nockwork system](https://nockwork.xyz/system/)
 - [Developer documentation](repository-files/README.md)
 
 ## V1.1 includes
