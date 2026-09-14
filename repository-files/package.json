@@ -1,0 +1,27 @@
+{
+  "name": "nockwork",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A local-first computer runtime with ownership, licensing and settlement on Robinhood Chain.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "verify": "node scripts/verify.mjs",
+    "demo": "node examples/demo.mjs"
+  },
+  "dependencies": {
+    "viem": "^2.37.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.10",
+    "solc": "0.8.30"
+  },
+  "overrides": {
+    "tmp": "0.2.7"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT"
+}

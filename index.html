@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nockwork — a composable computer system built on Robinhood Chain.">
+  <title>Nockwork / Source</title>
+  <link rel="icon" type="image/png" href="./nockwork-logo.png">
+  <link rel="stylesheet" href="./repository.css">
+  <link rel="stylesheet" href="./banner-color.css">
+</head>
+<body>
+<div class="ca-banner">
+  <span class="banner-spacer" aria-hidden="true"></span>
+  <div class="ca-value"><span>CONTRACT ADDRESS</span><b>CA: TO BE ANNOUNCED</b></div>
+  <a class="x-link" href="https://x.com/nockworkos" target="_blank" rel="noopener noreferrer" aria-label="Open Nockwork on X">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+  </a>
+</div>
+<div class="shell">
+  <aside class="left">
+    <section class="explorer">
+      <header class="repo-head">
+        <span class="mark"><img src="./nockwork-logo.png" alt=""></span>
+        <div><small>NOCKWORK / ROBINHOOD CHAIN</small><h1>nockwork</h1></div>
+        <div class="repo-actions"><em>PUBLIC</em><a href="./system/">OPEN SYSTEM V1</a></div>
+      </header>
+      <div class="repo-meta"><span><i></i>main</span><span>v1.1.0</span><span>31 source files</span></div>
+      <nav id="fileTree" class="tree" aria-label="Project files"></nav>
+      <footer class="repo-foot"><span>HEAD</span><span>4f2c9a1</span><span>CHAIN-NATIVE COMPUTER</span></footer>
+    </section>
+
+    <section class="notes">
+      <div class="label"><span>01</span> A NOTE FROM THE BUILDER</div>
+      <p class="lead">I am building a new kind of computer system on top of Robinhood Chain—one where applications, agents, storage, compute, licenses, and other parts of the system can be owned, exchanged, and recombined by the people who use them.</p>
+
+      <h3>WHY I STARTED</h3>
+      <p>Computers are called personal, but most of their important relationships are no longer personal. Our applications depend on company accounts. Our purchases can become inaccessible. Our files are pushed into services we do not control. A useful tool can disappear because a platform changes its rules, shuts down, or decides that our device is too old.</p>
+      <p>I do not think every company is malicious, and I do not believe blockchain automatically fixes these problems. I simply think we should be able to build another option: a computer where ownership is visible, permissions are understandable, and software can continue to exist beyond the company that first published it.</p>
+      <p>This idea began with a simple question. If a computer is made from many replaceable parts, why are the parts inside its software so difficult to own, exchange and recombine?</p>
+
+      <h3>THE SIMPLE VERSION</h3>
+      <p class="plain">Nockwork is a computer environment with its own internal market. It is not a shop for laptops or graphics cards. What people exchange inside it are digital parts of the system itself.</p>
+      <p>Those parts might be an application, an AI agent, a visual desktop, a month of encrypted storage, access to specialized computing power, a professional tool, an automation workflow, or a license that allows a component to run on your machine.</p>
+      <p>You could buy a component, rent it for a project, subscribe to its updates, resell a transferable license, or support the developer directly. The system would verify what you own and load the component without forcing you to depend on a single app store.</p>
+
+      <div class="label project"><span>02</span> WHAT THE PROJECT IS</div>
+      <h2>A local-first computer system with an economy built into its architecture.</h2>
+      <p>The project has three connected layers. The first is a familiar computer interface where people open files, use tools and manage their work. The second is a secure runtime that isolates components and controls what each one is allowed to access. The third is Robinhood Chain, which records ownership, licenses, payments and the history of published components.</p>
+      <p>The computer does not run “inside” the blockchain. Code execution, private files and everyday interaction stay on the user's device whenever possible. Robinhood Chain sits underneath the experience as the shared ownership and settlement layer.</p>
+
+      <h3>WHY ROBINHOOD CHAIN</h3>
+      <p>Robinhood Chain is an open, EVM-compatible network designed around programmable assets and financial activity. That makes it possible to build contracts for component registration, licenses, rentals, royalties and payments using familiar Ethereum tools.</p>
+      <p>The connection also makes conceptual sense to me. Robinhood began with the idea of opening financial access. This project asks whether that direction can be extended from financial assets to the digital tools people use every day. Nockwork is an independent experiment built on the network; it is not an official Robinhood product.</p>
+
+      <h3>HOW A COMPONENT ENTERS THE SYSTEM</h3>
+      <ol>
+        <li>A developer publishes a component and a cryptographic fingerprint of its code.</li>
+        <li>The developer defines its price, license rules, update policy and required permissions.</li>
+        <li>A user buys, rents or receives the right to use that component.</li>
+        <li>The local system verifies the license and code fingerprint through Robinhood Chain.</li>
+        <li>The runtime loads the component inside a restricted environment.</li>
+        <li>Payment and royalties are settled automatically according to the published rules.</li>
+      </ol>
+
+      <h3>WHAT CAN BE EXCHANGED</h3>
+      <p>Applications, plugins, AI agents, interface modules, storage plans, compute credits, datasets with clear usage rights, automation recipes, game content and transferable software licenses could all become system objects.</p>
+
+      <h3>WHAT MUST NEVER BECOME A MARKET</h3>
+      <p>Ownership must have limits. A person's identity, private keys, personal files, recovery rights and fundamental access to their own machine should never be commodities. No purchased module should be able to silently sell private information or take control of another component. The economy exists to serve the computer's owner—not to turn the owner into the product.</p>
+
+      <h3>DESIGN PRINCIPLES</h3>
+      <ul>
+        <li><b>User sovereignty.</b> Core identity and personal data cannot be revoked by a vendor.</li>
+        <li><b>Explicit capability boundaries.</b> Every module declares what it can read, change and transmit.</li>
+        <li><b>Local-first execution.</b> Owning a component does not force private work onto a public chain.</li>
+        <li><b>Developer continuity.</b> Creators can publish, version and earn without locking users into one storefront.</li>
+        <li><b>Replaceable parts.</b> No system module should become an irreplaceable gatekeeper.</li>
+      </ul>
+
+      <h3>WHAT THE FUTURE COULD LOOK LIKE</h3>
+      <p>Imagine opening a new computer and signing in with an identity you control. Your workspace reconstructs itself from a private manifest. The tools you own appear, your preferred interface loads, and every component clearly shows who built it, what it can access and whether its license can be transferred.</p>
+      <p>A designer could rent an expensive rendering module for one afternoon. A small developer could publish a useful system tool and receive payment each time a license changes hands. A community could maintain an abandoned application without losing its users. An AI agent could purchase a limited amount of compute through a session permission without receiving control of the owner's wallet.</p>
+      <p>Eventually, Nockwork could become a shared protocol rather than one company's operating system: many interfaces, many runtimes and many marketplaces using the same open component standard. Users could leave one implementation and carry their legitimate software rights into another.</p>
+
+      <h3>WHERE THE PROJECT IS TODAY</h3>
+      <p>This is an early architecture project. The repository currently demonstrates the core model: a capability-based kernel, a component registry, a license market and a local runtime. It is not yet a finished operating system, and the example contracts have not been presented as production-ready financial infrastructure.</p>
+      <p>The next serious work is to define the component standard, threat model, permission language and recovery model; connect the contracts to Robinhood Chain testnet; and build a small local runtime that can install and safely launch one real component from beginning to end.</p>
+
+      <h3>THE QUESTIONS I AM NOT HIDING</h3>
+      <p>How should licenses survive forks? Which rights should never be transferable? How can account recovery work without rebuilding centralized custody? How do we stop speculation from overwhelming usefulness? What is the simplest permission language a non-technical user can genuinely understand?</p>
+      <p>I do not have final answers yet. Those questions are not weaknesses to cover with branding—they are the actual work of building the project responsibly.</p>
+
+      <h3>WHY THIS IS PUBLIC</h3>
+      <p>I am showing the work early because the project should be understandable before it becomes impressive. The code on the right is a concrete description of the direction, not proof that every problem has been solved. I want criticism from developers, designers and ordinary computer users while the foundations can still change.</p>
+      <p>If this succeeds, the blockchain will not be the first thing people notice. They will notice that their tools are portable, their permissions make sense, developers are paid fairly, and their computer continues to belong to them.</p>
+
+      <div class="tags"><span>COMPOSABLE</span><span>USER-OWNED</span><span>LOCAL-FIRST</span><span>PERMISSIONED</span><span>OPEN SOURCE</span></div>
+      <p class="signature">— Nockwork, development note 001</p>
+    </section>
+  </aside>
+
+  <main class="workspace">
+    <header class="work-head">
+      <div class="lights"><i></i><i></i><i></i></div>
+      <div id="currentPath">src / kernel.js</div>
+      <button id="copyButton">COPY</button>
+    </header>
+    <div class="toolbar"><span id="languageLabel">JAVASCRIPT</span><span id="lineCount">— LINES</span><span>UTF-8</span><span>LF</span></div>
+    <div class="code-scroll" id="codeScroll"><pre id="codeView"><code>Loading source…</code></pre></div>
+    <footer class="work-foot"><span>Nockwork Runtime V1</span><span id="loadState">READING OBJECT</span></footer>
+  </main>
+</div>
+<script src="./repository.js"></script>
+</body>
+</html>

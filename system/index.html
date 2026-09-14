@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Nockwork V1 local system interface">
+  <title>Nockwork V1</title>
+  <link rel="icon" type="image/png" href="../nockwork-logo.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="computer">
+    <header class="topbar">
+      <a class="system-name" href="../">NOCKWORK <b>V1</b></a>
+      <div class="chain-state"><i></i><span id="modeText">LOCAL DEMO</span></div>
+      <div id="clock">00:00</div>
+      <button id="walletButton" class="wallet">CONNECT WALLET</button>
+    </header>
+
+    <aside class="sidebar">
+      <div class="identity">
+        <span class="avatar"><img src="../nockwork-logo.png" alt=""></span>
+        <div><small>ACTIVE IDENTITY</small><strong id="identityText">LOCAL USER</strong></div>
+      </div>
+      <nav id="navigation">
+        <button class="active" data-view="market"><span>◫</span> Marketplace</button>
+        <button data-view="installed"><span>◇</span> Installed <em id="installedCount">0</em></button>
+        <button data-view="activity"><span>≋</span> Activity</button>
+        <button data-view="settings"><span>⌁</span> Chain Settings</button>
+      </nav>
+      <div class="system-health">
+        <small>SYSTEM HEALTH</small>
+        <p><i></i> Runtime available</p>
+        <p><i></i> Integrity verification</p>
+        <p class="muted"><i></i> Chain settlement</p>
+      </div>
+    </aside>
+
+    <main class="desktop">
+      <section class="view active" id="marketView">
+        <div class="view-head">
+          <div><small>COMPONENT MARKET</small><h1>Build your computer.</h1></div>
+          <label class="search"><span>⌕</span><input id="searchInput" placeholder="Search components"></label>
+        </div>
+        <div class="filter-row" id="filters"></div>
+        <div class="catalog" id="catalog"></div>
+      </section>
+
+      <section class="view" id="installedView">
+        <div class="view-head"><div><small>YOUR SYSTEM</small><h1>Installed components.</h1></div></div>
+        <div class="installed-list" id="installedList"></div>
+      </section>
+
+      <section class="view" id="activityView">
+        <div class="view-head"><div><small>LOCAL + ONCHAIN</small><h1>System activity.</h1></div></div>
+        <div class="activity-list" id="activityList"></div>
+      </section>
+
+      <section class="view" id="settingsView">
+        <div class="view-head"><div><small>ROBINHOOD CHAIN</small><h1>Connection settings.</h1></div></div>
+        <form id="settingsForm" class="settings-form">
+          <label>NETWORK<select id="networkInput"><option value="testnet">Robinhood Chain Testnet · 46630</option><option value="mainnet">Robinhood Chain · 4663</option></select></label>
+          <label>COMPONENT REGISTRY<input id="registryInput" placeholder="0x…"></label>
+          <label>LICENSE MARKET<input id="marketInput" placeholder="0x…"></label>
+          <p>Leave contract addresses empty to use the safe local demonstration. Never enter a private key here. Wallet signatures happen inside your wallet.</p>
+          <button type="submit">SAVE CONFIGURATION</button>
+        </form>
+      </section>
+    </main>
+
+    <aside class="inspector" id="inspector">
+      <div class="empty-inspector"><span>◇</span><p>Select a component to inspect its ownership, permissions and license.</p></div>
+    </aside>
+
+    <footer class="statusbar">
+      <span>CAPABILITY KERNEL · READY</span>
+      <span id="statusMessage">No component selected</span>
+      <span>LOCAL-FIRST / CHAIN-VERIFIED</span>
+    </footer>
+  </div>
+  <script type="module" src="./system.js"></script>
+</body>
+</html>
